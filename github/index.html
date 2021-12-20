@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub</title>
+    <link rel="icon" href="./images/fav-icon.png" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="menu"></div>
+        <div class="nav-links">
+          <div class="icon-group">
+            <img src="images/github-icon.png" alt="github-svg" />
+            <div class="search-input-container">
+              <input
+                type="text"
+                placeholder="Search of jump to..."
+                class="nav-input"
+              />
+              <span>/</span>
+            </div>
+            <div class="link-group">
+              <a href="#">Pull requests</a>
+              <a href="#">Issues</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Explore</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="right-nav-group">
+          <div class="noti"></div>
+
+          <div class="tri-down-container">
+            <div class="plus-icon"></div>
+            <div class="tri-down"></div>
+          </div>
+          <div class="tri-down-container">
+            <img
+              id="user"
+              src="./images/user.png"
+              class="image-organization image-user"
+              alt="user"
+            />
+            <div class="tri-down"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="side-nav">
+        <div class="side-nav-block">
+          <div>
+            <img
+              src="./images/user.png"
+              class="image-organization image-user"
+              alt="user"
+            />
+            <span class="user">thasuohm</span>
+          </div>
+        </div>
+
+        <div class="side-nav-block">
+          <div class="side-nav-flex flex-sb">
+            <span>Repositories</span>
+            <button class="green-btn primary-btn side-btn">New</button>
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Find a repository..."
+              class="side-nav-input"
+            />
+          </div>
+          <div class="side-nav-list">
+            <img
+              src="./images/team-cover-1.png"
+              class="image-organization"
+              alt="@int222-36-37-58"
+            /><span>int222-36-37-58/FrontEnd</span>
+          </div>
+          <div class="side-nav-list">
+            <img
+              src="./images/user.png"
+              class="image-organization image-user"
+              alt="user"
+            /><span>thasuohm/internresume</span>
+          </div>
+          <div class="side-nav-list">
+            <img
+              src="./images/user.png"
+              class="image-organization image-user"
+              alt="user"
+            /><span>thasuohm/slideJS</span>
+          </div>
+
+          <div class="f-mini-gray">Show more</div>
+        </div>
+
+        <div class="side-nav-block">
+          <p>Recent activity</p>
+          <span class="f-mini-gray non-hover"
+            >When you take actions across GitHub, we’ll provide links to that
+            activity here.</span
+          >
+        </div>
+
+        <div class="side-nav-block">
+          <p>Yout teams</p>
+          <input
+            type="text"
+            placeholder="Find a team..."
+            class="side-nav-input"
+          />
+          <div class="side-nav-list">
+            <img
+              src="./images/team-cover-1.png"
+              class="image-organization"
+              alt="@int222-36-37-58"
+            /><span>int222-36-37-58/FrontEnd</span>
+          </div>
+          <div class="side-nav-list">
+            <img
+              src="./images/user.png"
+              class="image-organization image-user"
+              alt="user"
+            /><span>thasuohm/internresume</span>
+          </div>
+          <div class="side-nav-list">
+            <img
+              src="./images/user.png"
+              class="image-organization image-user"
+              alt="user"
+            /><span>thasuohm/slideJS</span>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="block organization">
+          <div class="block-box organization">
+            <button class="close">x</button>
+            <div>
+              You’ve been added to the
+              <img
+                src="./images/team-cover-1.png"
+                class="image-organization"
+                alt="@int222-36-37-58"
+              />
+              <b>int222-36-37-58 organization!</b>
+            </div>
+            <button class="primary-btn">View organization</button>
+          </div>
+        </div>
+        <div class="block repository">
+          <p>Repositories</p>
+          <div class="block-box repository">
+            <input
+              type="text"
+              placeholder="Find a repository..."
+              className="primary-text-input"
+            />
+            <div class="block-item-list">
+              <div>
+                <img
+                  src="./images/team-cover-1.png"
+                  class="image-organization"
+                  alt="@int222-36-37-58"
+                /><span>FrontEnd int222-36-37-58/FrontEnd</span>
+              </div>
+              <div>
+                <img
+                  src="./images/team-cover-2.png"
+                  class="image-organization"
+                  alt="@internresume"
+                /><span>internresume thasuohm/internresume</span>
+              </div>
+              <div>
+                <img
+                  src="./images/team-cover-3.png"
+                  class="image-organization"
+                  alt="@slideJS"
+                /><span>slideJS thasuohm/slideJS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block recent-activity">
+          <p>Recent activity</p>
+          <div class="block-box recent-activity">
+            When you take actions across GitHub, we’ll provide links to that
+            activity here.
+          </div>
+        </div>
+
+        <div class="block your-team">
+          <p>Your team</p>
+          <div class="block-box your-team">
+            <input
+              type="text"
+              placeholder="Find a team..."
+              className="primary-text-input"
+            />
+            <div class="block-item-list">
+              <div>
+                <img
+                  src="./images/team-cover-1.png"
+                  class="image-organization"
+                  alt="@int222-36-37-58"
+                /><span>int222-36-37-58/dev</span>
+              </div>
+              <div>
+                <img
+                  src="./images/team-cover-2.png"
+                  class="image-organization"
+                  alt="@internresume"
+                /><span>36-37-58-INT221/221 </span>
+              </div>
+              <div>
+                <img
+                  src="./images/team-cover-3.png"
+                  class="image-organization"
+                  alt="@slideJS"
+                /><span>SITKMUTT25 sit-2021-int209/sitkmutt25 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="block all-activity">
+          <p>All activity</p>
+          <div class="block-box all-activity">
+            <div class="block-item-title">Introduce yourself</div>
+            <span>
+              The easiest way to introduce yourself on GitHub is by creating a
+              README in a repository about you! You can start here:
+            </span>
+
+            <div class="block-end-button">
+              <span>Dismiss This</span>
+              <button class="primary-btn green-btn">Continue</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <div class="block-box discover">
+            <div class="block-header">
+              Discover interesting projects and people to populate your personal
+              news feed.
+            </div>
+            <div class="para-gray-blue">
+              Your news feed helps you keep up with recent activity on
+              repositories you <span>watch</span> or <span>star</span> and
+              people you <span>follow</span>.
+            </div>
+            <button class="primary-btn">Explore GitHub</button>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-tip">
+            <div class="para-gray-blue">
+              ProTip! The feed shows you events from people you
+              <span>follow</span> and repositories you <span>watch</span> or
+              <span>star</span>.
+            </div>
+
+            <span class="hover-blue">Subscribe to your news feed</span>.
+          </div>
+          <div class="footer-content">
+            <div class="github-copyright">
+              <img
+                src="./images/github-icon.png"
+                class="github-logo"
+                alt="@slideJS"
+              /><span>© 2021 GitHub, Inc.</span>
+            </div>
+
+            <div class="footer-list">
+              <div class="footer-list-column">
+                <div>Blog</div>
+                <div>About</div>
+                <div>Shop</div>
+                <div>Contact GitHub</div>
+                <div>Pricing</div>
+              </div>
+
+              <div class="footer-list-column">
+                <div>API</div>
+                <div>Training</div>
+                <div>Status</div>
+                <div>Security</div>
+              </div>
+
+              <div class="footer-list-column">
+                <div>Terms</div>
+                <div>Privacy</div>
+                <div>Docs</div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <div id="fake-right-flex">f</div>
+    </main>
+  </body>
+</html>
