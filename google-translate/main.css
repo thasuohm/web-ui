@@ -1,0 +1,272 @@
+:root {
+  --clr-white: white;
+  --clr-primary: #5f6368;
+  --clr-secondary: #e2e2e2;
+  --clr-third: #1f75e8;
+  --clr-fourth: #e4ecfa;
+  --clr-fifth: #fafafa;
+  --f-small: 0.75rem;
+  --f-normal: 0.9rem;
+  --f-header: 1.4rem;
+}
+
+html {
+  margin: 0;
+  font-size: var(--f-normal);
+  padding: 0;
+  color: var(--clr-primary);
+  background-color: var(--clr-fifth);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+nav img:not(.google-icon) {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid transparent;
+  padding: 0.55rem;
+}
+
+nav img:not(.google-icon):hover {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid var(--clr-secondary);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  border: solid var(--clr-secondary);
+  border-width: 0 0 1px 0;
+  background-color: var(--clr-white);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.google-logo {
+  display: flex;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.google-logo > img {
+  width: 80px;
+  margin-right: 0.33rem;
+  height: auto;
+}
+
+.google-logo > span {
+  letter-spacing: 0.5px;
+  font-size: 1.4rem;
+}
+
+.input-type {
+  display: none;
+}
+
+.translate-header {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  border: solid var(--clr-secondary);
+  border-width: 0 0 1px 0;
+}
+.translate-box {
+  background-color: var(--clr-white);
+}
+
+.translate-box img {
+  width: 1.25rem;
+}
+
+.translate-header .current-language {
+  text-align: center;
+  width: 100%;
+  color: var(--clr-third);
+}
+
+.translate-box input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--f-header);
+  padding: 1rem;
+}
+
+.input-zone {
+  height: 8.5rem;
+  position: relative;
+  border: 1px solid;
+  border-top: 0;
+
+  border-color: var(--clr-secondary);
+}
+
+.language-list {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  html {
+    background-color: var(--clr-white);
+  }
+
+  main {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  nav {
+    padding: 1rem 2rem;
+  }
+
+  .input-type {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin: 1rem 0;
+  }
+
+  .input-type::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    left: 0;
+    height: 11.5rem;
+    border: solid var(--clr-secondary);
+    border-width: 0 0 1px 0;
+    width: 100%;
+    background-color: var(--clr-fifth);
+  }
+
+  .type {
+    color: var(--clr-third);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: flex;
+    align-content: center;
+    gap: 0 0.5rem;
+    border: 1px solid var(--clr-secondary);
+    width: 7.5rem;
+  }
+
+  .type:hover,
+  .current-type {
+    cursor: pointer;
+    background-color: var(--clr-fourth);
+  }
+
+  .type > img {
+    width: 1.25rem;
+  }
+
+  .translate-box {
+    border: 1px solid var(--clr-secondary);
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .current-language {
+    display: none;
+  }
+
+  .translate-box input {
+    border: 0;
+  }
+
+  .input-result {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .input-zone:first-child {
+    border: solid var(--clr-secondary);
+    border-width: 0 1px 0 0;
+    width: 50%;
+  }
+  .language-list {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1.5rem;
+  }
+
+  .swap-icon {
+    margin: 0 2.5rem;
+  }
+
+  .current-language-inlist,
+  .language-list > div:hover {
+    cursor: pointer;
+    color: var(--clr-third);
+    position: relative;
+  }
+
+  .current-language-inlist::after,
+  .language-list > div:hover::after {
+    content: "";
+    left: 0;
+    width: 100%;
+    position: absolute;
+    border: solid var(--clr-third);
+    padding-bottom: 2.25rem;
+    border-width: 0 0 2px 0;
+  }
+}
+
+.footer-input {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+.feature-group {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-group > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 1.25rem;
+  width: 5rem;
+  font-size: var(--f-small);
+}
+.feature-group > div:hover {
+  cursor: pointer;
+}
+.feature-group img {
+  border: 1px solid var(--clr-secondary);
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 3.75rem;
+}
+.comment {
+  text-align: right;
+  margin: 0.5rem 0;
+  font-size: var(--f-small);
+}
+
+.comment:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
